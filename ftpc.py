@@ -1,4 +1,4 @@
-#client that sent the file 
+#client that send the file 
 import os, struct, socket, sys
 
 
