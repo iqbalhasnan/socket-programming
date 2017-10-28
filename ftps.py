@@ -4,6 +4,7 @@ import socket, struct,sys
 def main(port):
     #create new server socket
     server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    server.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
     #bind port
     server.bind(('164.107.112.73', int(port)))
     #set max accept rate to 5 conenctions
